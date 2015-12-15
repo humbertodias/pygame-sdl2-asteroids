@@ -34,7 +34,10 @@ class MovableSprite(pg.sprite.Sprite):
     def update(self):
         self.rotate().move().screen_border()
 
-    def rotate(self):
+    def rotate(self, rotate_angle = None):
+        if rotate_angle != None:
+            self.angle = rotate_angle
+
         old_center = self.rect.center
         self.image = pg.transform.rotate(self.original_image, self.angle)
         self.rect  = self.image.get_rect()

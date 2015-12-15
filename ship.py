@@ -10,7 +10,7 @@ class Ship(MovableSprite):
     """
     load = 0
 
-    TIME_RELOAD_SHOT = 0
+    TIME_RELOAD_SHOT = 15
 
     """
     Tempo para carregar
