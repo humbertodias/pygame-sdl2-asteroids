@@ -18,7 +18,7 @@ install_pygame_sdl2_dep:
     libjpeg-dev libpng-dev virtualenvwrapper
 
 install_pygame_sdl2:	install_pygame_sdl2_dep
-	cd `mktemp -d` && git clone --branch renpy-8.1.0.23050902 https://github.com/renpy/pygame_sdl2 . && python3 setup.py install
+	sudo apt install -y python3-pygame-sdl2
 
 exe_win:
 	nuitka3 --follow-imports --standalone --remove-output --windows-icon=icon.ico src/main.py
