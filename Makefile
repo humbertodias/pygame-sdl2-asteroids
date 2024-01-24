@@ -18,9 +18,9 @@ install_pygame_sdl2:	install_nuikta
 
 exe_win:
 	nuitka3 --follow-imports --standalone --remove-output --windows-icon=icon.ico src/main.py
-	cp -r resource main.dist ; cp config.txt main.dist
+	cp -r resource main.dist
 exe_mac: exe
 exe_lin: exe
 exe:
 	nuitka3 --follow-imports --standalone --remove-output --clang src/main.py
-	cp -r resource main.dist ; cp config.txt main.dist
+	cp -r resource main.dist
