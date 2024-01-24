@@ -11,9 +11,9 @@ install_nuikta:
 	sudo apt install -y nuitka
 
 install_pygame_sdl2:	install_nuikta
-	sudo apt install -y build-essential python-dev libsdl2-dev \
+	sudo apt install -y build-essential python3-dev libsdl2-dev \
     libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev \
-    libjpeg-dev libpng12-dev virtualenvwrapper && \
+    libjpeg-dev libpng16-dev virtualenvwrapper && \
 	cd `mktemp -d` && git clone https://github.com/renpy/pygame_sdl2 . && python3 setup.py install
 
 exe_win:
