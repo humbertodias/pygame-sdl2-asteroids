@@ -1,4 +1,4 @@
-dep:	install_pygame_sdl2
+dep:	install_nuikta	install_pygame_sdl2
 	pip3 install -r requirements.txt
 
 run:
@@ -10,10 +10,12 @@ clean:
 install_nuikta:
 	sudo apt install -y nuitka
 
-install_pygame_sdl2:	install_nuikta
+install_pygame_sdl2_dep:
 	sudo apt install -y build-essential python3-dev libsdl2-dev \
     libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev \
-    libjpeg-dev libpng-dev virtualenvwrapper && \
+    libjpeg-dev libpng-dev virtualenvwrapper
+
+install_pygame_sdl2:	install_pygame_sdl2_dep
 	cd `mktemp -d` && git clone https://github.com/renpy/pygame_sdl2 . && python3 setup.py install
 
 exe_win:
