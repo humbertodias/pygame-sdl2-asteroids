@@ -11,11 +11,8 @@ install_nuikta:
 	sudo apt install -y nuitka
 
 install_pygame_sdl2_dep:
+	apt update -y
 	pip3 install cython
-	sudo apt update -y && \
-	sudo apt install -y build-essential python3-dev libsdl2-dev \
-    libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev \
-    libjpeg-dev libpng-dev virtualenvwrapper
 
 install_pygame_sdl2:	install_pygame_sdl2_dep
 	sudo apt install -y python3-pygame-sdl2
