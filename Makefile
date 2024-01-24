@@ -1,4 +1,4 @@
-dep:	install_nuikta	install_pygame_sdl2
+dep:	install_pygame_sdl2	install_nuikta
 	pip3 install -r requirements.txt
 
 run:
