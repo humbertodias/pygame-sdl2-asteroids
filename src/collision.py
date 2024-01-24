@@ -3,7 +3,7 @@
 """
 Funções para detectar colisão.
 """
-__author__  = 'Humberto Lino'
+__author__  = 'Humberto Dias'
 __version__ = '1.0'
 
 

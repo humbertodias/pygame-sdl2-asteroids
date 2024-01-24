@@ -24,7 +24,7 @@ class Asteroid(MovableSprite):
             if i % 2 == 0:
                 size = i // 2
 
-            asteroid = Asteroid('img/asteroid.png'
+            asteroid = Asteroid('resource/img/asteroid.png'
                                      , size=size
                                      , angle=Asteroid.random_angle()
                                      , speed_rotate=2
@@ -52,7 +52,7 @@ class Asteroid(MovableSprite):
                 initial_position = [self.move_pos[0] + random.randint(0,self.image.get_width())
                                    ,self.move_pos[1] + random.randint(0,self.image.get_height()) ]
 
-                asteroid = Asteroid('img/asteroid.png'
+                asteroid = Asteroid('resource/img/asteroid.png'
                          , size=self.size - 1
                          , angle=Asteroid.random_angle()
                          , speed_rotate = speed_rotate

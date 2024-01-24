@@ -17,16 +17,16 @@ def main():
     SIZE = (800,600)
     # screen = pg.display.set_mode(SIZE, pg.FULLSCREEN)
     screen = pg.display.set_mode(SIZE, pg.RESIZABLE)
-    icon =  pg.image.load('img/icon.png')
+    icon =  pg.image.load('resource/img/icon.png')
     pg.display.set_caption("AsteroidsPresentation", icon)
 
     background = pg.surface.Surface(SIZE)
 
-    font = pg.font.Font('font/hyperspace.ttf', 40)
-    text = font.render("by Humberto Lino", 1, Color.WHITE)
+    font = pg.font.Font('resource/font/hyperspace.ttf', 40)
+    text = font.render("by Humberto Dias", 1, Color.WHITE)
 
     star_field = StarField(screen)
-    ship = Ship('img/ship.png', angle=0)
+    ship = Ship('resource/img/ship.png', angle=0)
     asteroids = Asteroid.create_asteroids()
 
     all_sprites = pg.sprite.Group(asteroids, ship)
@@ -219,7 +219,7 @@ def main():
         # for asteroid in asteroids:
         #     if ship.collision(asteroid):
         #         ship.kill()
-        #         ship = Ship('img/ship.png', angle=0)
+        #         ship = Ship('resource/img/ship.png', angle=0)
         #         all_sprites.add ( ship )
 
         if len(asteroids.sprites()) == 0 :

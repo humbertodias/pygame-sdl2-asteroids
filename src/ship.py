@@ -24,7 +24,7 @@ class Ship(MovableSprite):
         if self.load >= self.TIME_RELOAD_SHOT:
 
             self.load=0.0
-            self.bullets.add(Bullet('img/bullet.png'
+            self.bullets.add(Bullet('resource/img/bullet.png'
                                       , speed_rotate=10, speed_accelerate=10
                                       , angle=self.angle
                                       , initial_position=self.rect.center))

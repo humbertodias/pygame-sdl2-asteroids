@@ -19,16 +19,16 @@ class TouchButtons:
 
     def create_touch_buttons(self, button_width):
         ## Create rectangles that will detect direction
-        self.left = pg.image.load("img/left.png").convert_alpha()
+        self.left = pg.image.load("resource/img/left.png").convert_alpha()
         self.left = pg.transform.scale(self.left, (button_width, button_width))
 
-        self.right = pg.image.load("img/right.png").convert_alpha()
+        self.right = pg.image.load("resource/img/right.png").convert_alpha()
         self.right = pg.transform.scale(self.right, (button_width, button_width))
 
-        self.power = pg.image.load("img/power.png").convert_alpha()
+        self.power = pg.image.load("resource/img/power.png").convert_alpha()
         self.power = pg.transform.scale(self.power, (button_width, button_width))
 
-        self.shot = pg.image.load("img/shot.png").convert_alpha()
+        self.shot = pg.image.load("resource/img/shot.png").convert_alpha()
         self.shot = pg.transform.scale(self.shot, (button_width, button_width))
 
         self.left_rect = pg.Rect(0, self.size[1]-button_width, button_width, button_width)
