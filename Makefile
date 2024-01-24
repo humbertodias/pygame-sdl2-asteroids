@@ -11,7 +11,7 @@ install_nuikta:
 	sudo apt install -y nuitka
 
 install_pygame_sdl2_dep:
-	apt update -y
+	sudo apt update -y
 	pip3 install cython
 
 install_pygame_sdl2:	install_pygame_sdl2_dep
