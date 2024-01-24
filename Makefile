@@ -2,7 +2,7 @@ dep:	install_pygame_sdl2
 	pip3 install -r requirements.txt
 
 run:
-	python3 main.py
+	python3 src/main.py
 
 clean:
 	rm -rf __pycache__ .idea *.pyc
